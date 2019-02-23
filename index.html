@@ -8,12 +8,12 @@
 <body>
 
 <div class="container">
-	<p class="some-css-class">This is made blue by D3.js</p>
+	<p class="some-css-class"></p>
 </div>
 
 <script type="text/javascript">
 	window.onload = function() {
-		d3.select(".some-css-class").attr("style", "color: blue");
+		d3.select(".some-css-class").html("Some html rendered by <h3>D3.js</h3>");
 	};
 </script>
 </body>
