@@ -2,18 +2,18 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>One</title>
+	<title>D3 Tutorial</title>
 	<script type="text/javascript" src="js/d3.v5.min.js"></script>
 </head>
 <body>
 
 <div class="container">
-	<p>This is some text to be alerted by D3.js</p>
+	<p class="some-css-class">This is made blue by D3.js</p>
 </div>
 
 <script type="text/javascript">
 	window.onload = function() {
-		alert(d3.select("p").text());
+		d3.select(".some-css-class").attr("style", "color: blue");
 	};
 </script>
 </body>
