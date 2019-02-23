@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>One</title>
+	<script type="text/javascript" src="js/d3.v5.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<p>This is some text to be alerted by D3.js</p>
+</div>
+
+<script type="text/javascript">
+	window.onload = function() {
+		alert(d3.select("p").text());
+	};
+</script>
+</body>
+</html>
